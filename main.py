@@ -52,7 +52,16 @@ def main():
     four_post = ImagePost("Ron", "?", "my man", man_img)
     like_rect = pygame.Rect(LIKE_BUTTON_X_POS, LIKE_BUTTON_Y_POS, LIKE_BUTTON_WIDTH, LIKE_BUTTON_HEIGHT)
     posts_list.append(four_post)
-    
+
+    text_post = TextPost("Itay", "Tel Aviv", "best nitzagram")
+    like_rect = pygame.Rect(LIKE_BUTTON_X_POS, LIKE_BUTTON_Y_POS, LIKE_BUTTON_WIDTH, LIKE_BUTTON_HEIGHT)
+    posts_list.append(text_post)
+
+    work_img = "Images\\work_img.jpg"
+    four_post = ImagePost("Itamer", "Isral", "its me in work", work_img)
+    like_rect = pygame.Rect(LIKE_BUTTON_X_POS, LIKE_BUTTON_Y_POS, LIKE_BUTTON_WIDTH, LIKE_BUTTON_HEIGHT)
+    posts_list.append(work_img)
+
     post_index_to_display = 0
     running = True
     while running:
